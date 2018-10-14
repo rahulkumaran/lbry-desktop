@@ -31,24 +31,6 @@
   font-size: 13px;
 }
 
-.card__media {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-color: var(--color-placeholder);
-}
-
-.card__media--no-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.card__media--nsfw {
-  background-color: var(--color-error);
-}
-
 .card--link {
   cursor: pointer;
 }
@@ -74,25 +56,39 @@
   pointer-events: none;
 }
 
+.card__media {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: var(--color-placeholder);
+}
+
+.card__media--no-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card__media--nsfw {
+  background-color: var(--color-error);
+}
+
 .card__title {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: var(--text-color);
-  padding-top: $spacing-vertical * 1/3;
 
   @media (min-width: $large-breakpoint) {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 }
 
 .card__title--file-card {
   // FileCard is slightly different where the title is only slightly bigger than the subtitle
   // Slightly bigger than 2 lines for consistent channel placement
-  font-size: 1.1em;
+  font-size: 1em;
   height: 3.3em;
-
-  @media only screen and (min-width: $large-breakpoint) {
-    font-size: 1.3em;
-  }
+  padding-top: $spacing-vertical * 1/3;
 }
 
 .card--space-between {
@@ -108,12 +104,12 @@
 
 .card__subtitle {
   color: var(--card-text-color);
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1em;
   padding-top: $spacing-vertical * 1/3;
 
   @media (min-width: $large-breakpoint) {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
