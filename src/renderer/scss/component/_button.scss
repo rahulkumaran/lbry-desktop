@@ -65,6 +65,10 @@ button:disabled {
   min-width: 0;
   box-shadow: none;
   text-align: left;
+
+  &:disabled {
+    color: var(--color-grey-dark);
+  }
 }
 
 .btn.btn--external-link {

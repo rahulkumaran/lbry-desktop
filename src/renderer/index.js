@@ -1,5 +1,9 @@
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable no-console */
+
+// babel-polyfill is used to allow async/await
+import 'babel-polyfill'; // eslint-disable-line import/no-extraneous-dependencies
+
 import App from 'component/app';
 import SnackBar from 'component/snackBar';
 import SplashScreen from 'component/splash';
@@ -206,4 +210,5 @@ const init = () => {
 
 init();
 
+/* eslint-enable react/jsx-filename-extension */
 /* eslint-enable no-console */
